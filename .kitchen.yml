@@ -7,8 +7,6 @@ provisioner:
   hosts: all
   require_ansible_repo: true
   ansible_verbose: true
-  extra_vars:
-    ros_release: groovy
 
 platforms:
   - name: trusty64
