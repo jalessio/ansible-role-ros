@@ -9,11 +9,18 @@ provisioner:
   ansible_verbose: true
 
 platforms:
-  - name: trusty64
+  - name: indigo
     driver_config:
       box: trusty64
       box_url: https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/14.04/providers/virtualbox.box
-  - name: precise64
+  - name: hydro
+    driver_config:
+      box: precise64
+      box_url: https://vagrantcloud.com/ubuntu/boxes/precise64/versions/12.04.4/providers/virtualbox.box
+      ansible:
+        extra_vars:
+          ros_release: hydro
+  - name: groovy
     driver_config:
       box: precise64
       box_url: https://vagrantcloud.com/ubuntu/boxes/precise64/versions/12.04.4/providers/virtualbox.box
