@@ -1,0 +1,11 @@
+---
+# Currently supported ROS releases:
+# - "groovy" on Ubuntu "precise"
+# - "hydro"  on Ubuntu "precise"
+# - "indigo" on Ubuntu "trusty"
+ros_release: "indigo"
+ros_package: "ros-base"
+
+# Optionally use a mirror for the ROS packages
+ros_apt_uri: "http://packages.ros.org/ros/ubuntu"
+ros_apt_key: "https://raw.githubusercontent.com/ros/rosdistro/master/ros.key"

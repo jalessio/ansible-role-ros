@@ -1,0 +1,17 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: jalessio
+  description: Robot Operating System (ROS) installation for Linux.
+  company: ""
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.4
+  platforms:
+  - name: Ubuntu
+    versions:
+    - precise
+    - trusty
+  categories:
+    - development
+    - system

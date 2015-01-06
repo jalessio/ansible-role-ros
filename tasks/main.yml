@@ -1,0 +1,15 @@
+---
+- name: Add ROS repository apt-key
+  apt_key:
+    url: "{{ ros_apt_key }}"
+    state: present
+
+- name: Add ROS repository
+  apt_repository:
+    repo: "deb {{ ros_apt_uri }} {{ ansible_lsb.codename }} main"
+    state: present
+
+- name: Install desired ROS package
+  apt:
+    pkg: "ros-{{ ros_release }}-{{ ros_package }}"
+    state: present

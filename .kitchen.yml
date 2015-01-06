@@ -1,0 +1,29 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: ansible_playbook
+  hosts: all
+  require_ansible_repo: true
+  ansible_verbose: true
+  extra_vars:
+    ros_release: groovy
+
+platforms:
+  - name: trusty64
+    driver_config:
+      box: trusty64
+      box_url: https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/14.04/providers/virtualbox.box
+  - name: precise64
+    driver_config:
+      box: precise64
+      box_url: https://vagrantcloud.com/ubuntu/boxes/precise64/versions/12.04.4/providers/virtualbox.box
+      ansible:
+        extra_vars:
+          ros_release: groovy
+
+suites:
+  - name: default
+    run_list:
+    attributes:
