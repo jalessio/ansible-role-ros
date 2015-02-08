@@ -30,8 +30,8 @@ None.
 ## Testing
 
 This role is tested:
-* locally with [Test Kitchen](http://kitchen.ci/) using the [kitchen-ansible plugin](https://github.com/neillturner/kitchen-ansible) and [Serverspec](http://serverspec.org/). The .kitchen.yml file specifies tests for installing ROS Indigo on Ubuntu 14.04 and ROS Groovy on Ubuntu 12.04.
-* automatically via Travis CI at [https://travis-ci.org/jalessio/ansible-role-ros/](https://travis-ci.org/jalessio/ansible-role-ros/). Travis CI currently only tests installtion of ROS Groovy on Ubuntu 12.04
+* locally with [Test Kitchen](http://kitchen.ci/) using the [kitchen-ansible plugin](https://github.com/neillturner/kitchen-ansible) and [Serverspec](http://serverspec.org/). The .kitchen.yml file specifies tests for installing ROS Indigo on Ubuntu 14.04, ROS Hydro on Ubuntu 12.04, and and ROS Groovy on Ubuntu 12.04.
+* automatically via Travis CI at [https://travis-ci.org/jalessio/ansible-role-ros/](https://travis-ci.org/jalessio/ansible-role-ros/). Travis CI currently only tests installtion of ROS Groovy on Ubuntu 12.04 (since that's all Travis CI currently supports).
 
 ## License
 
