@@ -1,5 +1,7 @@
 # Ansible Role: ROS
 
+Ansible Galaxy: [jalessio.ROS](https://galaxy.ansible.com/list#/roles/2832)
+
 [![Build Status](https://travis-ci.org/jalessio/ansible-role-ros.svg?branch=master)](https://travis-ci.org/jalessio/ansible-role-ros)
 
 Installs the Robot Operating System (ROS) on Ubuntu linux servers.
